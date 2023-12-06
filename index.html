@@ -167,7 +167,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="static/images/first_teaser.png" alt="Intro Image">
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle">
         Existing training-free layout-to-image synthesis approaches struggle to generate high-quality images that adhere to the given
 textual prompts and spatial layout. In contrast, LoCo is able to handle various spatial layouts and unusual prompts while maintaining high
 image quality and precise concept coverage.
@@ -218,7 +218,7 @@ image quality and precise concept coverage.
         <h2 class="title is-3">Framework</h2>
       </div>
       <img src="static/images/pipeline.png" alt="Methods">
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle">
         We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timesep. 
         Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
       </h2>
@@ -226,6 +226,35 @@ image quality and precise concept coverage.
   </div>
 </section>
 <!-- End Framework -->
+
+
+<!-- Visual comparison -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Visual comparisons with competing training-free methods</h2>
+    </div>
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons with different baselines.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons with different baselines.
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Visual comparison -->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">

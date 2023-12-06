@@ -51,6 +51,21 @@
     src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var carousels = document.querySelectorAll('.carousel');
+      carousels.forEach(function (carousel) {
+        new BulmaCarousel(carousel, {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          navigation: true,
+          loop: true
+        });
+      });
+    });
+  </script>
+
+
 </head>
 <body>
 

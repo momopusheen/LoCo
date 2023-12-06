@@ -156,18 +156,36 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section">
   <div class="container is-max-desktop">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent text-to-image (T2I) diffusion models have achieved remarkable progress in generating high-quality images given text-prompts as input. However, these models fail to convey appropriate spatial composition specified by a layout instruction. In this work, we probe into zero-shot grounded T2I generation with diffusion models, that is, generating images corresponding to the input layout information without training auxiliary modules or finetuning diffusion models. We propose a Region and Boundary (R&B) aware cross-attention guidance approach that gradually modulates the attention maps of diffusion model during generative process, and assists the model to synthesize images (1) with high fidelity, (2) highly compatible with textual input, and (3) interpreting layout instructions accurately. Specifically, we leverage the discrete sampling to bridge the gap between consecutive attention maps and discrete layout constraints, and design a region-aware loss to refine the generative layout during diffusion process. We further propose a boundary- aware loss to strengthen object discriminability within the corresponding regions. Experimental results show that our method outperforms existing state-of-the-art zero-shot grounded T2I generation methods by a large margin both qualitatively and quantitatively on several benchmarks.
+            Recent text-to-image diffusion models have reached an unprecedented level in generating high-quality images.
+            However, their exclusive reliance on textual prompts often falls short in accurately conveying fine-grained spatial
+            compositions.
+          </p>
+          <p>
+            Here, we propose LoCo, a training-free approach for layout-to-image synthesis that excels in producing high-quality images aligned with both textual prompts and spatial layouts. 
+            Our method introduces a Localized Attention Constraint to refine cross-attention for individual objects, ensuring their precise placement in designated regions. 
+            We further propose a Padding Token Constraint to leverage the semantic information embedded in previously neglected padding tokens, thereby preventing the undesired fusion of synthesized objects.
+          </p>
+          <p>
+            LoCo seamlessly integrates into existing text-to-image and layout-to-image models, significantly amplifying their performance and effectively addressing semantic failures observed in prior
+            methods. 
+            Through extensive experiments, we showcase the superiority of our approach, surpassing existing state-ofthe-art training-free layout-to-image methods both qualitatively and quantitatively across multiple benchmarks
           </p>
         </div>
       </div>
     </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+
+    <!--/ Paper video. -->
   </div>
 </section>
 <!-- End paper abstract -->
@@ -182,7 +200,8 @@
       </div>
       <img src="static/images/pipeline.png" alt="Methods">
       <h2 class="subtitle has-text-centered">
-        Two loss functions are proposed to modulate the cross-attention of diffusion unet: region-aware loss and boundary-aware loss. Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
+        We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timesep. 
+        Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
       </h2>
     </div>
   </div>

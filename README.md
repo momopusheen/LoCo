@@ -1,14 +1,14 @@
-# Nerfies
+# LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the project page for the [LoCo website](https://nerfies.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find LoCo useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{zhao2023loco,
+  title={LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis},
+  author={Zhao, Peiang and Li, Han and Jin, Ruiyang and Zhou, S Kevin},
+  journal={arXiv preprint arXiv:2311.12342},
+  year={2023}
 }
 ```
 

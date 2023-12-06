@@ -51,21 +51,6 @@
     src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var carousels = document.querySelectorAll('.carousel');
-      carousels.forEach(function (carousel) {
-        new BulmaCarousel(carousel, {
-          slidesToScroll: 1,
-          slidesToShow: 1,
-          navigation: true,
-          loop: true
-        });
-      });
-    });
-  </script>
-
-
 </head>
 <body>
 
@@ -180,7 +165,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/first_teaser.png" alt="Intro Image">
+      <img src="static/images/Introduction.png" alt="Intro Image">
       <h2 class="subtitle has-text-centered">
         R&B injects spatial instructions into the denoising process through classifier guidance. And generates images that highly align with the text description and layout instructions without auxiliary training. 
       </h2>
@@ -214,7 +199,7 @@
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Framework</h2>
       </div>
-      <img src="static/images/pipeline.png" alt="Methods">
+      <img src="static/images/method_new.png" alt="Methods">
       <h2 class="subtitle has-text-centered">
         Two loss functions are proposed to modulate the cross-attention of diffusion unet: region-aware loss and boundary-aware loss. Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
       </h2>
@@ -234,21 +219,21 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/comp.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual comparisons with different baselines across different text prompts
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/supp_comp_1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual comparisons with different baselines across different random seeds
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp2.png" alt="MY ALT TEXT"/>
+        <img src="static/images/supp_comp_2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual comparisons with different baselines across different random seeds
        </h2>
@@ -270,35 +255,35 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp3.png" alt="MY ALT TEXT"/>
+        <img src="static/images/seeds1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual variations across different random seeds
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp4.png" alt="MY ALT TEXT"/>
+        <img src="static/images/seeds2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual variations across different random seeds
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp5.png" alt="MY ALT TEXT"/>
+        <img src="static/images/seeds3.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual variations across different random seeds
        </h2>
      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp6.png" alt="MY ALT TEXT"/>
+        <img src="static/images/change_obj.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual variations across different text prompts
       </h2>
     </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp6.png" alt="MY ALT TEXT"/>
+        <img src="static/images/variation.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Multiple variations of generated images. The shape and localization of boxes are changed for spatial variations. 
           And the instances of text prompts are changed for semantic variations.
@@ -320,14 +305,14 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/res1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Quantitative results on HRS and DrawBench, best results are <b>bold</b>
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/res2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Quantitative comparisons of spatial accuracy and text similarity
         </h2>

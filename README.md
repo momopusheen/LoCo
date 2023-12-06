@@ -1,8 +1,8 @@
 # LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis
 
-This is the project page for the [LoCo website](https://nerfies.github.io).
+This is the project page for the [LoCo website](https://momopusheen.github.io/LoCo/).
 
-If you find LoCo useful for your work please cite:
+If you find LoCo useful for your work, please cite:
 ```
 @article{zhao2023loco,
   title={LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis},

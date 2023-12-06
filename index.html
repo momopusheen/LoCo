@@ -219,7 +219,8 @@ image quality and precise concept coverage.
       </div>
       <img src="static/images/pipeline.png" alt="Methods">
       <h2 class="subtitle has-text-centered">
-        We propose two loss functions  modulate the cross-attention of diffusion unet. Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
+        We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timesep. 
+        Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
       </h2>
     </div>
   </div>

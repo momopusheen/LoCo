@@ -108,12 +108,12 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href=" " target="_blank"
+                    <a href="https://huggingface.co/spaces/Pusheen/LoCo" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (Coming Soon)</span>
+                    <span>Demo</span>
                   </a>
                 </span>
 
@@ -160,7 +160,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/first_teaser.png" alt="Intro Image">
+      <img src="static/images/loco_teaser.png" alt="Intro Image">
       <h2 class="subtitle">
         Existing training-free layout-to-image synthesis approaches struggle to generate high-quality images that adhere to the given
         textual prompts and spatial layout. In contrast, LoCo is able to handle various spatial layouts and unusual prompts while maintaining high
@@ -179,14 +179,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent text-to-image diffusion models have reached an unprecedented level in generating high-quality images.
-            However, their exclusive reliance on textual prompts often falls short in accurately conveying fine-grained spatial
-            compositions.
+            Recent text-to-image diffusion models have reached an unprecedented level in generating high-quality images. However, their exclusive reliance on textual prompts often falls short in precise control
+            of image compositions.
           </p>
           <p>
-            Here, we propose LoCo, a training-free approach for layout-to-image synthesis that excels in producing high-quality images aligned with both textual prompts and spatial layouts. 
-            Our method introduces a Localized Attention Constraint to refine cross-attention for individual objects, ensuring their precise placement in designated regions. 
-            We further propose a Padding Token Constraint to leverage the semantic information embedded in previously neglected padding tokens, thereby preventing the undesired fusion of synthesized objects.
+            In this paper, we propose LoCo, a training-free
+            approach for layout-to-image Synthesis that excels in producing highquality images aligned with both textual prompts and layout instructions. Specifically, we introduce a Localized Attention Constraint (LAC),
+            leveraging semantic affinity between pixels in self-attention maps to create precise representations of desired objects and effectively ensure the accurate placement of objects in designated regions. We further propose a Padding Token Constraint (PTC) to leverage the semantic information embedded in previously neglected padding tokens, improving the consistency between object appearance and layout instructions.
           </p>
           <p>
             LoCo seamlessly integrates into existing text-to-image and layout-to-image models, significantly amplifying their performance and effectively addressing semantic failures observed in prior
@@ -210,7 +209,7 @@
         <h2 class="title is-3">Framework</h2>
         <div style="margin-bottom: 40px;"></div> <!-- 或者使用其他高度 -->
       </div>
-      <img src="static/images/pipeline.png" alt="Methods">
+      <img src="static/images/loco_pipeline.png" alt="Methods">
       <h2 class="subtitle">
         We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timestep. 
         Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
